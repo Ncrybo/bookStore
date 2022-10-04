@@ -1,0 +1,40 @@
+[{
+    "id": 1,
+    "name": "东野圭吾：白夜行（2017版）",
+    "author": "[日]东野圭吾",
+    "price": 59.6,
+    "img": "image/1.jpg",
+    "category": "侦探/悬疑/推理"
+}, 
+{
+    "id": 13,
+    "name": "红岩",
+    "author": "罗广斌，杨益言",
+    "price": 25.0,
+    "img": "image/13.jpg",
+    "category": "军事"
+},
+{
+    "id": 25,
+    "name": "无尽世界（套装全3册）(通宵小说大师肯·福莱特中世纪三部曲）",
+        "author": "[英]肯·福莱特",
+        "price": 188.0,
+        "img": "image/25.jpg",
+        "category": "历史"
+},
+{
+    "id": 37,
+    "name": "中国科幻基石丛书：三体（套装1-3册）",
+    "author": "刘慈欣",
+    "price": 93.0,
+    "img": "image/37.jpg",
+    "category": "科幻"
+}, 
+{
+    "id": 49,
+    "name": "北欧众神",
+    "author": "[英]尼尔·盖曼",
+    "price": 42.0,
+    "img": "image/49.jpg",
+    "category": "魔幻/奇幻/玄幻"
+}]
