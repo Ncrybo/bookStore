@@ -6,6 +6,8 @@
 
 
 
+![商品详情](images/bookInfo.png)
+
 ## 1. 前端
 
 ​	前端调用后端接口，利用钩子和ajax将请求的数据挂载到vue中
@@ -452,7 +454,7 @@ final static String key = "boboSecret";
 
 # 6、商品规格
 
-![](images\sku.png)
+![](images\sku.png) 
 
 ​		在==商品详情页==中，点击购买按钮，就会弹出商品规格选项，用户可以根据需求购买不同规格的商品，并且可以提交预定日期和备注选项。
 
