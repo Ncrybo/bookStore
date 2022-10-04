@@ -184,7 +184,7 @@ setTotalPrice() {
 
 # 3、登录交互
 
-![image-20211221124416554](C:\Users\Bobo\AppData\Roaming\Typora\typora-user-images\image-20211221124416554.png)
+![image-20211221124416554](images/login.png)
 
 注意，图片由==图床==加载，需要联网才能被加载出来。
 
@@ -266,7 +266,7 @@ public class InterceptorConfig extends WebMvcConfigurationSupport {
 
 # 4、搜索
 
-![image-20211221142047640](C:\Users\Bobo\AppData\Roaming\Typora\typora-user-images\image-20211221142047640.png)
+![image-20211221142047640](images/search.png)
 
 ## 4.1前端设计
 
@@ -452,7 +452,7 @@ final static String key = "boboSecret";
 
 # 6、商品规格
 
-![](D:\Bobo\各科作业\vue实验报告\期末作业 (1)\images\sku.png)
+![](images\sku.png)
 
 ​		在==商品详情页==中，点击购买按钮，就会弹出商品规格选项，用户可以根据需求购买不同规格的商品，并且可以提交预定日期和备注选项。
 
