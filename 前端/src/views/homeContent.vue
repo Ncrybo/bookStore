@@ -56,6 +56,7 @@
 
 <script>
 import { mapState,mapGetters,mapMutations } from "vuex";
+import {get_books_by_category, searchBook, getCategory, getAllBooks} from '@/api/book'
 export default {
   data() {
     return {
@@ -71,9 +72,9 @@ export default {
   methods : {
     trans(index) {           //选择不同的种类书籍
       let slef = this;
-      this.$ajax.get_books_by_category(index-1)  //这样就直接得到对应书籍的下标，就不用遍历数组了
+      get_books_by_category(index-1)  //这样就直接得到对应书籍的下标，就不用遍历数组了
     .then(function(response){
-      slef.category_item = response.data;
+      slef.category_item = response;
     })
     },
     todetail(book) {
@@ -95,7 +96,7 @@ export default {
       return document.querySelector('.search');
     },
     search() {
-      this.$ajax.post('/searchBook/'+this.value)
+      searchBook(this.value)
       .then((res) => {
         this.searchBooks = res.data;
       })
@@ -116,7 +117,7 @@ export default {
   watch: {
     value() {
       let _this = this;
-      this.$ajax.post('/searchBook/'+this.value)
+      searchBook(this.value)
       .then((res) => {
         _this.searchBooks = res.data;
         if(_this.value.length == 0)
@@ -131,12 +132,12 @@ export default {
   },
   mounted() {
     let self = this;
-    this.$ajax.get_category()   //加载书籍种类
+    getCategory()   //加载书籍种类
     .then(function(response){
-      self.category= response.data;
+      self.category= response;
     })
 
-    this.$ajax.getAllBooks()    //加载所有书籍
+    getAllBooks()    //加载所有书籍
     .then(function(response){
       self.category_item = response.data;
     })

@@ -37,7 +37,7 @@
 </template>
 
 <script>
-
+import {login} from '@/api/login'
 export default {
   data() {
     return {
@@ -48,7 +48,7 @@ export default {
   methods: {
     onSubmit(values) {
       let _this = this;
-      this.$ajax.login({
+      login({
         username:this.username,
         password: this.password
       })
